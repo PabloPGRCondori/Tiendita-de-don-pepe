@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Tiendita de Don Pepe</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -18,6 +18,26 @@
     </header>
     <main>
         <p>Explora nuestros productos y servicios.</p>
+
+        <!-- Formulario para añadir clientes -->
+        <section>
+            <h2>Añadir Cliente</h2>
+            <form action="/clientes" method="POST">
+                <label for="nombre-cliente">Nombre del Cliente:</label>
+                <input type="text" id="nombre-cliente" name="nombre" required>
+                <button type="submit">Añadir Cliente</button>
+            </form>
+        </section>
+
+        <!-- Formulario para añadir productos -->
+        <section>
+            <h2>Añadir Producto</h2>
+            <form action="/productos" method="POST">
+                <label for="nombre-producto">Nombre del Producto:</label>
+                <input type="text" id="nombre-producto" name="nombre" required>
+                <button type="submit">Añadir Producto</button>
+            </form>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 La Tiendita de Don Pepe</p>
